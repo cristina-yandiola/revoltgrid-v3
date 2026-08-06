@@ -17,7 +17,7 @@ type Props = {
 const { id = 'intro', title, text, classes } = Astro.props
 ---
 
-<Section id={id} padding="none" classes=`bg-neutral-50 px-3 ${classes}`>
+<Section id={id} padding="none" classes=`bg-surface-50 px-3 ${classes}`>
 	<div class="relative flex flex-col items-center py-16 text-center">
 		<h1 set:html={title} />
 		<header class="page-header">
