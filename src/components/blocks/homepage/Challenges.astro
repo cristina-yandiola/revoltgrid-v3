@@ -10,7 +10,6 @@ const stats = [
 	{ value: '4.3k', label: 'Substations in the workspace' },
 	{ value: '12GW+', label: 'Projects analyzed' }
 ]
-const facts = ['All four TSO regions', '380 kV & 110 kV', 'Official sources only']
 ---
 
 <Section id="challenges" classes="bg-surface-100" surfaceColor>
@@ -47,15 +46,6 @@ const facts = ['All four TSO regions', '380 kV & 110 kV', 'Official sources only
 										{stat.label}
 									</p>
 								</div>
-							))
-						}
-					</div>
-					<div class="mt-8 flex flex-wrap gap-3">
-						{
-							facts.map((fact) => (
-								<span class="rounded-full bg-primary-50 px-4 py-2 text-sm font-semibold text-primary-700">
-									{fact}
-								</span>
 							))
 						}
 					</div>
