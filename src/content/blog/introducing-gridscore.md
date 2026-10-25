@@ -10,7 +10,7 @@ tags:
   - Germany
   - Grid Connection
 featured: true
-heroImage: '/images/product/grid-map.jpg'
+heroImage: '/images/product/mockups/laptop-map.jpg'
 heroImageAlt: 'Revolt Grid Workspace — Germany-wide grid map with 380, 220 and 110 kV layers'
 author: 'Revolt Energy'
 ---
@@ -31,7 +31,7 @@ GridScore brings relevant indicators together in a single workspace, providing a
 
 Instead of evaluating substations in isolation, developers can compare opportunities across a range of grid-related factors and focus development resources where they are most likely to create value.
 
-![Revolt Grid Workspace — Germany-wide grid map with 380, 220 and 110 kV layers and curtailment overlay](/images/product/grid-map.jpg)
+![Analyst reviewing the Revolt Grid Workspace map of the German grid](/images/product/mockups/person-map.jpg)
 
 ## What Can You Do with GridScore?
 
@@ -55,7 +55,7 @@ Compare substations using GridScore's structured scoring framework to support ea
 
 Monitor relevant grid developments and application windows to help inform project planning and connection strategies.
 
-![Revolt Grid Workspace — portfolio dashboard with pipeline stages and top substations (demo data)](/images/product/workspace-dashboard.jpg)
+![Laptop running the Revolt Grid Workspace portfolio dashboard (demo data)](/images/product/mockups/laptop-dashboard.jpg)
 
 ## From 380 kV to 110 kV: Expanding Coverage
 
@@ -81,6 +81,6 @@ For projects requiring deeper assessment, Revolt also provides independent grid 
 
 Whether you're screening new BESS sites, prioritizing an existing development pipeline or evaluating projects for acquisition, discover how GridScore can support your grid connection strategy.
 
-**[→ Request a GridScore Demo](/book)**
+**[→ Request a GridScore Demo](/contact)**
 
 **[→ Learn More About GridScore](/gridscore)**

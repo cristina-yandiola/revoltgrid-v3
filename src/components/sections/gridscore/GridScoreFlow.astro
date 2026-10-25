@@ -23,7 +23,7 @@ const steps = [
 ]
 ---
 
-<Section id="gridscore-flow" mode="light">
+<Section id="gridscore-flow" mode="light" surfaceColor>
 	<Row classes="mb-12 text-center">
 		<Col span="8" classes="lg:col-start-3">
 			<p class="mb-4 font-mono text-xs font-bold uppercase tracking-[0.2em] text-primary-500">
@@ -39,7 +39,7 @@ const steps = [
 		{
 			steps.map((step) => (
 				<Col span="4">
-					<div class="h-full rounded-lg border-2 border-neutral-200 bg-surface-50 p-8">
+					<div class="h-full rounded-lg border-2 border-neutral-200 bg-white p-8">
 						<div class="mb-6 flex h-10 w-10 items-center justify-center rounded bg-primary-500 font-mono text-sm font-bold text-white">
 							{step.number}
 						</div>

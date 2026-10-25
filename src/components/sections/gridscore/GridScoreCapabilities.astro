@@ -3,7 +3,6 @@
 import Section from '../../ui/Section.astro'
 import Col from '../../ui/Col.astro'
 import Row from '../../ui/Row.astro'
-import LaptopFrame from '../../ui/LaptopFrame.astro'
 
 const capabilities = [
 	{
@@ -50,11 +49,17 @@ const capabilities = [
 			</div>
 		</Col>
 		<Col span="6" classes="lg:col-start-7">
-			<LaptopFrame
-				src="/images/product/workspace-dashboard.jpg"
-				alt="Revolt Grid Workspace — portfolio dashboard with pipeline stages and top substations (demo data)"
-				caption="Revolt Grid Workspace — portfolio dashboard (live software, demo data)"
-			/>
+			<figure>
+				<img
+					src="/images/product/mockups/laptop-dashboard.jpg"
+					alt="Laptop running the Revolt Grid Workspace portfolio dashboard (demo data)"
+					class="w-full rounded-lg shadow-lg"
+					loading="lazy"
+				/>
+				<figcaption class="mt-3 text-center text-xs text-neutral-500">
+					Revolt Grid Workspace — portfolio dashboard (live software, demo data)
+				</figcaption>
+			</figure>
 		</Col>
 	</Row>
 </Section>
