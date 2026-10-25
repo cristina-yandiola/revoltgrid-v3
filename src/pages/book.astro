@@ -159,6 +159,11 @@ const SEO = {
     }
 
     errorEl.classList.remove('visible');
-    window.location.href = 'https://cal.com/revoltenergy/introcall';
+    const params = new URLSearchParams({
+      name,
+      email,
+      notes: `Company: ${company} — Role: ${title}`
+    });
+    window.location.href = `https://cal.com/revoltenergy/introcall?${params.toString()}`;
   });
 </script>

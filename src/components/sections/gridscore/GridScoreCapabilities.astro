@@ -1,0 +1,68 @@
+---
+// What you can do with GridScore — capability list + real dashboard screenshot (framed, not cropped)
+import Section from '../../ui/Section.astro'
+import Col from '../../ui/Col.astro'
+import Row from '../../ui/Row.astro'
+import { Image } from 'astro:assets'
+import dashboard from '../../../assets/product-dashboard.jpg'
+
+const capabilities = [
+	{
+		title: 'Identify and compare connection opportunities',
+		text: 'Explore substations across Germany, assess available grid capacity indicators and compare potential connection locations.'
+	},
+	{
+		title: 'Understand grid congestion and curtailment exposure',
+		text: 'Review historical congestion and redispatch patterns to identify network constraints that may affect project performance.'
+	},
+	{
+		title: 'Track grid expansion plans and timelines',
+		text: "Explore planned network reinforcements, including relevant measures from Germany's Network Development Plan (NEP)."
+	},
+	{
+		title: 'Prioritize your development pipeline',
+		text: "Compare substations using GridScore's structured scoring framework and track candidate sites through the connection process."
+	},
+	{
+		title: 'Stay informed about grid connection developments',
+		text: 'Monitor relevant grid developments and application windows to inform project planning and connection strategy.'
+	}
+]
+---
+
+<Section id="gridscore-capabilities" mode="light" surfaceColor>
+	<Row classes="items-center gap-y-12">
+		<Col span="6" classes="relative z-10">
+			<p class="mb-4 font-mono text-xs font-bold uppercase tracking-[0.2em] text-primary-500">
+				What you can do
+			</p>
+			<h2 class="mb-8 font-headings text-3xl font-bold leading-tight lg:text-4xl">
+				From grid data to better project decisions
+			</h2>
+			<div class="space-y-6">
+				{
+					capabilities.map((item) => (
+						<div>
+							<h3 class="mb-1 text-lg font-bold text-neutral-700">{item.title}</h3>
+							<p class="leading-relaxed text-neutral-600 dark:text-neutral-400">{item.text}</p>
+						</div>
+					))
+				}
+			</div>
+		</Col>
+		<Col span="6" classes="lg:col-start-7">
+			<figure class="overflow-hidden rounded-lg border border-neutral-200 bg-white shadow-lg">
+				<Image
+					src={dashboard}
+					alt="Revolt Grid Workspace — portfolio dashboard with pipeline stages and top substations (demo data)"
+					class="w-full"
+				/>
+				<figcaption
+					class="border-t border-neutral-200 bg-white px-4 py-2.5 text-xs text-neutral-500"
+				>
+					Revolt Grid Workspace — portfolio dashboard (live software, demo data)
+				</figcaption>
+			</figure>
+		</Col>
+	</Row>
+</Section>

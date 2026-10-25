@@ -3,23 +3,27 @@ import Layout from '../layouts/Layout.astro'
 
 import GridScoreHero from '../components/sections/gridscore/GridScoreHero.astro'
 import GridScoreMetrics from '../components/sections/gridscore/GridScoreMetrics.astro'
+import GridScoreCapabilities from '../components/sections/gridscore/GridScoreCapabilities.astro'
 import GridScoreContext from '../components/sections/gridscore/GridScoreContext.astro'
-import GridScoreSupport from '../components/sections/gridscore/GridScoreSupport.astro'
 import GridScoreFlow from '../components/sections/gridscore/GridScoreFlow.astro'
+import GridScoreSupport from '../components/sections/gridscore/GridScoreSupport.astro'
+import GridScoreFaq from '../components/sections/gridscore/GridScoreFaq.astro'
 import CTA from '../components/blocks/homepage/CTA.astro'
 
 const SEO = {
-	title: 'GridScore | Revolt Energy',
+	title: 'GridScore™ — Grid Intelligence Workspace | Revolt Energy',
 	description:
-		'GridScore ranks points of connection, capacity signals, and grid access risk before development capital is committed.'
+		'GridScore™ helps BESS developers and investors screen, compare and prioritize grid connection opportunities across Germany — capacity signals, congestion exposure, network build-out and process timing in one workspace.'
 }
 ---
 
 <Layout title={SEO.title} description={SEO.description}>
 	<GridScoreHero />
 	<GridScoreMetrics />
+	<GridScoreCapabilities />
 	<GridScoreContext />
 	<GridScoreFlow />
 	<GridScoreSupport />
+	<GridScoreFaq />
 	<CTA />
 </Layout>

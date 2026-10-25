@@ -1,0 +1,95 @@
+---
+// Two ways to work with Revolt — GridScore workspace + Grid Advisory
+// ------------
+import Section from '../../ui/Section.astro'
+import Eyebrow from '../../ui/Eyebrow.astro'
+import Card from '../../ui/cards/partials/Card.astro'
+import { Image } from 'astro:assets'
+import pylonsImage from '../../../assets/aerial-powerlines.jpg'
+import { Icon } from 'astro-icon/components'
+
+type Offering = {
+	tag: string
+	title: string
+	description: string
+	ctaText: string
+	ctaLink: string
+}
+
+const software: Offering = {
+	tag: 'Software',
+	title: 'GridScore™ — the grid intelligence workspace',
+	description:
+		'Screen and compare connection opportunities across Germany using capacity signals, grid build-out, congestion indicators and process timing — and track your candidate sites in one pipeline.',
+	ctaText: 'Explore GridScore',
+	ctaLink: '/gridscore'
+}
+const advisory: Offering = {
+	tag: 'Specialist Advisory',
+	title: 'Grid Advisory',
+	description:
+		'Independent grid studies, project-specific risk assessments and strategic support through the German connection process — for development and investment decisions.',
+	ctaText: 'Explore Grid Advisory',
+	ctaLink: '/grid-strategy'
+}
+---
+
+<Section id="two-ways" mode="light" surfaceColor>
+	<div class="mx-auto mb-14 max-w-3xl text-center">
+		<Eyebrow title="Two ways to work with Revolt" />
+		<h2 class="font-headings text-3xl font-bold leading-tight text-neutral-700 lg:text-4xl">
+			A workspace for screening. Advisory for the decisions that follow.
+		</h2>
+	</div>
+
+	<div class="mx-auto grid max-w-6xl grid-cols-1 gap-8 lg:grid-cols-2">
+		<Card classes="h-full overflow-hidden">
+			<div class="flex h-full flex-col">
+				<img
+					src="/images/product/grid-map.jpg"
+					alt="Revolt Grid Workspace — Germany-wide grid map with 380, 220 and 110 kV layers"
+					class="h-56 w-full object-cover object-left-top"
+					loading="lazy"
+				/>
+				<div class="flex flex-1 flex-col p-8">
+					<Eyebrow title={software.tag} />
+					<h3 class="mb-4 font-headings text-[24px] font-bold leading-snug text-neutral-800">
+						{software.title}
+					</h3>
+					<p class="mb-6 flex-1 leading-relaxed text-neutral-600">{software.description}</p>
+					<a
+						href={software.ctaLink}
+						class="flex items-center font-bold uppercase tracking-wide text-neutral-800 transition-colors duration-200 hover:text-primary-700"
+					>
+						{software.ctaText}
+						<Icon name="arrow-right" class="ml-2" />
+					</a>
+				</div>
+			</div>
+		</Card>
+		<Card classes="h-full overflow-hidden">
+			<div class="flex h-full flex-col">
+				<Image
+					src={pylonsImage}
+					alt="High-voltage transmission lines crossing the German countryside"
+					class="h-56 w-full object-cover"
+					loading="lazy"
+				/>
+				<div class="flex flex-1 flex-col p-8">
+					<Eyebrow title={advisory.tag} />
+					<h3 class="mb-4 font-headings text-[24px] font-bold leading-snug text-neutral-800">
+						{advisory.title}
+					</h3>
+					<p class="mb-6 flex-1 leading-relaxed text-neutral-600">{advisory.description}</p>
+					<a
+						href={advisory.ctaLink}
+						class="flex items-center font-bold uppercase tracking-wide text-neutral-800 transition-colors duration-200 hover:text-primary-700"
+					>
+						{advisory.ctaText}
+						<Icon name="arrow-right" class="ml-2" />
+					</a>
+				</div>
+			</div>
+		</Card>
+	</div>
+</Section>

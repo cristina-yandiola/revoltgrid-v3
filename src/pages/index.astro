@@ -4,20 +4,29 @@
 import Layout from '../layouts/Layout.astro'
 // - Blocks
 import Hero from '../components/blocks/homepage/Hero.astro'
-import Delivers from '../components/blocks/homepage/Delivers.astro'
+import Challenges from '../components/blocks/homepage/Challenges.astro'
+import TwoWays from '../components/blocks/homepage/TwoWays.astro'
+import WhyRevolt from '../components/blocks/homepage/WhyRevolt.astro'
+import BlogStrip from '../components/blocks/homepage/BlogStrip.astro'
 import CTA from '../components/blocks/homepage/CTA.astro'
 
 // Content
 // - SEO
 const SEO = {
-	title: 'Revolt Energy | Grid intelligence for BESS & renewables',
+	title: 'Revolt Energy | Grid intelligence & advisory for BESS in Germany',
 	description:
-		'Revolt is a specialized consulting firm accelerating grid access for BESS, renewables, and data centers. Overcome slow grid processes and optimize pipeline structuring with our expert strategies.'
+		'Revolt combines GridScore™ grid intelligence software and specialist advisory to help BESS developers and investors in Germany find better grid connection opportunities, faster.'
 }
 ---
 
 <Layout title={SEO.title} description={SEO.description}>
 	<Hero />
-	<Delivers />
-	<CTA />
+	<Challenges />
+	<TwoWays />
+	<WhyRevolt />
+	<BlogStrip />
+	<CTA
+		secondaryButtonText="Discuss a grid assessment"
+		secondaryButtonLink="/contact"
+	/>
 </Layout>

@@ -40,11 +40,9 @@ export const navigationBarData: NavData = {
 	navItems: [
 		{ name: 'Home', link: '/' },
 		{ name: 'GridScore', link: '/gridscore' },
-		{ name: 'Grid Strategy', link: '/grid-strategy' },
+		{ name: 'Advisory', link: '/grid-strategy' },
 		{ name: 'About us', link: '/about-us' },
-		{ name: 'Contact', link: '/contact' }
+		{ name: 'Blog', link: '/blog' }
 	],
-	navActions: [
-		/* { name: 'Contact us', link: '/contact', style: 'primary', size: 'lg' } */
-	]
+	navActions: [{ name: 'Book a demo', link: '/book', style: 'accent-light', size: 'base' }]
 }

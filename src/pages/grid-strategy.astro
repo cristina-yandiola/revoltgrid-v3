@@ -3,19 +3,20 @@ import Layout from '../layouts/Layout.astro'
 import CTA from '../components/blocks/homepage/CTA.astro'
 
 import Hero from '../components/sections/grid-strategy/Hero.astro'
+import Services from '../components/sections/grid-strategy/Services.astro'
 import Capabilities from '../components/sections/grid-strategy/Capabilities.astro'
 import Methodology from '../components/sections/grid-strategy/Methodology.astro'
-import Engineering from '../components/sections/grid-strategy/Engineering.astro'
 
 const SEO = {
-	title: 'Grid strategy | Revolt Energy',
+	title: 'Grid Advisory | Revolt Energy',
 	description:
-		'Supporting investors and developers with high-fidelity grid connection decisions. Navigate complexity with Revolt’s proprietary analytics engine.'
+		'Independent grid studies, project-specific risk assessments and strategic support through the German connection process — for BESS development and investment decisions.'
 }
 ---
 
 <Layout title={SEO.title} description={SEO.description}>
 	<Hero />
+	<Services />
 	<Capabilities />
 	<Methodology />
 	<CTA

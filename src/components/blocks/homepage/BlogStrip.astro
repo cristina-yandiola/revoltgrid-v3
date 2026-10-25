@@ -1,0 +1,47 @@
+---
+// Blog strip — latest articles on the homepage
+// ------------
+import Section from '../../ui/Section.astro'
+import Eyebrow from '../../ui/Eyebrow.astro'
+import Card from '../../ui/cards/partials/Card.astro'
+import { getCollection } from 'astro:content'
+import { Icon } from 'astro-icon/components'
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft))
+	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+	.slice(0, 3)
+---
+
+{
+	posts.length > 0 && (
+		<Section id="latest-insights" mode="light" surfaceColor>
+			<div class="mx-auto mb-14 max-w-2xl text-center">
+				<Eyebrow title="From the blog" />
+				<h2 class="font-headings text-3xl font-bold leading-tight text-neutral-700 lg:text-4xl">
+					Latest grid insights
+				</h2>
+			</div>
+			<div class="mx-auto flex max-w-6xl flex-wrap justify-center gap-8">
+				{posts.map((post) => (
+					<Card classes="h-full w-full lg:w-[31%]">
+						<a href={`/blog/${post.id}/`} class="flex h-full flex-col p-8 !text-inherit">
+							<p class="mb-3 text-xs font-bold uppercase tracking-widest text-primary-500">
+								{post.data.category}
+							</p>
+							<h3 class="mb-4 font-headings text-xl font-bold leading-snug text-neutral-800">
+								{post.data.title}
+							</h3>
+							<p class="mb-6 flex-1 text-sm leading-relaxed text-neutral-600">
+								{post.data.description}
+							</p>
+							<span class="flex items-center font-bold uppercase tracking-wide text-neutral-800">
+								Read article
+								<Icon name="arrow-right" class="ml-2" />
+							</span>
+						</a>
+					</Card>
+				))}
+			</div>
+		</Section>
+	)
+}

@@ -46,23 +46,23 @@ export const footerNavigationData: FooterData = {
 	},
 	footerColumns: [
 		{
-			category: 'Essentials',
+			category: 'Explore',
 			subCategories: [
-				{
-					subCategory: 'Home',
-					subCategoryLink: '/'
-				},
-				{
-					subCategory: 'About us',
-					subCategoryLink: '/about-us'
-				},
 				{
 					subCategory: 'GridScore',
 					subCategoryLink: '/gridscore'
 				},
 				{
-					subCategory: 'Grid Strategy',
+					subCategory: 'Advisory',
 					subCategoryLink: '/grid-strategy'
+				},
+				{
+					subCategory: 'Blog',
+					subCategoryLink: '/blog'
+				},
+				{
+					subCategory: 'About us',
+					subCategoryLink: '/about-us'
 				}
 			]
 		},

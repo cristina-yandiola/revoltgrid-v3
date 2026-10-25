@@ -1,5 +1,5 @@
 ---
-import Button from '../../ui/Button.astro'
+// How to start with GridScore + coverage honesty
 import Col from '../../ui/Col.astro'
 import Row from '../../ui/Row.astro'
 import Section from '../../ui/Section.astro'
@@ -7,18 +7,18 @@ import Section from '../../ui/Section.astro'
 const steps = [
 	{
 		number: '1',
-		title: 'Location Intake',
-		text: 'Provide GPS coordinates, substations, or a candidate development pipeline for evaluation.'
+		title: 'Book a demo',
+		text: 'A short call to understand your pipeline and show you the workspace on real German grid data.'
 	},
 	{
 		number: '2',
-		title: 'Analytical Pass',
-		text: 'GridScore evaluates congestion exposure, connection constraints, redispatch patterns, and regional capacity signals.'
+		title: 'See it on your own pipeline',
+		text: 'We walk through your candidate sites or regions of interest in GridScore, so you can judge the value on your own projects.'
 	},
 	{
 		number: '3',
-		title: 'Risk Dossier',
-		text: 'Receive a concise GridScore report with prioritized connection opportunities and key grid-related risk indicators.'
+		title: 'Activate access',
+		text: 'Subscription access for your team. Scope depends on the modules and voltage levels you need — discussed in the demo.'
 	}
 ]
 ---
@@ -27,49 +27,11 @@ const steps = [
 	<Row classes="mb-12 text-center">
 		<Col span="8" classes="lg:col-start-3">
 			<p class="mb-4 font-mono text-xs font-bold uppercase tracking-[0.2em] text-primary-500">
-				Operational Flow
+				How to start
 			</p>
 			<h2 class="font-headings text-3xl font-bold leading-tight lg:text-4xl">
-				How GridScore is delivered
+				See GridScore on your own development pipeline
 			</h2>
-			<p class="mt-6 text-lg text-neutral-600 dark:text-neutral-400">GridScore is available as:</p>
-		</Col>
-	</Row>
-
-	<Row classes="gap-y-6 pb-4">
-		<Col span="6">
-			<div
-				class="flex h-full flex-col justify-between border-2 border-neutral-200 bg-surface-50 p-8"
-			>
-				<p class="mb-3 font-mono text-xs font-bold uppercase tracking-[0.2em] text-primary-500">
-					Downloadable Grid Report
-				</p>
-				<p class="text-lg leading-relaxed text-neutral-600">
-					Downloadable ranking of Germany's 50 top transmission-level (380kV) points of connection,
-					assessed by standard grid risk parameters.
-				</p>
-				<div class="flex justify-center">
-					<Button type="link" link="/contact" style="accent-light">Request Report</Button>
-				</div>
-			</div>
-		</Col>
-		<Col span="6">
-			<div
-				class="flex h-full flex-col justify-between border-2 border-neutral-200 bg-surface-50 p-8"
-			>
-				<p class="mb-3 font-mono text-xs font-bold uppercase tracking-[0.2em] text-primary-500">
-					Tailored Grid Assessment
-				</p>
-				<p class="text-lg leading-relaxed text-neutral-600">
-					Tailored evaluation of specific or points of connection (POC) for your development
-					pipeline or projects under acquisition.
-				</p>
-				<div class="flex justify-center">
-					<Button type="link" link="/contact" style="accent-light"
-						>Request Tailored Assessment</Button
-					>
-				</div>
-			</div>
 		</Col>
 	</Row>
 
@@ -77,8 +39,8 @@ const steps = [
 		{
 			steps.map((step) => (
 				<Col span="4">
-					<div class="h-full border-2 border-neutral-200 bg-surface-50 p-8">
-						<div class="mb-6 flex h-10 w-10 items-center justify-center bg-primary-500 font-mono text-sm font-bold text-white">
+					<div class="h-full rounded-lg border-2 border-neutral-200 bg-surface-50 p-8">
+						<div class="mb-6 flex h-10 w-10 items-center justify-center rounded bg-primary-500 font-mono text-sm font-bold text-white">
 							{step.number}
 						</div>
 						<h3 class="mb-4 font-headings text-xl font-bold">{step.title}</h3>
@@ -87,5 +49,18 @@ const steps = [
 				</Col>
 			))
 		}
+	</Row>
+
+	<Row classes="mt-12">
+		<Col span="8" classes="lg:col-start-3">
+			<div class="rounded-lg bg-primary-50 p-6 text-center">
+				<p class="mb-0 text-sm leading-relaxed text-neutral-700">
+					<span class="font-bold">Coverage:</span> GridScore launches with Germany's 380 kV
+					transmission network and is expanding progressively into the 110 kV distribution grid,
+					operator by operator. The availability and precision of individual indicators depend on
+					the information published by the relevant grid operators.
+				</p>
+			</div>
+		</Col>
 	</Row>
 </Section>

@@ -1,0 +1,69 @@
+---
+// Grid Advisory — four concrete services with deliverables
+import Col from '../../ui/Col.astro'
+import Row from '../../ui/Row.astro'
+import Section from '../../ui/Section.astro'
+
+const services = [
+	{
+		title: 'Grid risk assessment',
+		when: 'Before committing capital to a project or acquisition.',
+		what: 'Independent analysis of congestion and curtailment exposure, capacity constraints, planned network development and their implications for the project.',
+		receive: 'A project-specific assessment of relevant grid risks, findings and implications — scope agreed per engagement.'
+	},
+	{
+		title: 'Grid connection review',
+		when: 'When connection documents, conditions or technical assumptions need an independent look.',
+		what: 'Review of grid connection status, connection conditions, technical assumptions and the development risks they carry.',
+		receive: 'A clause-level review with the project-specific conditions that matter flagged, and what to raise with the grid operator.'
+	},
+	{
+		title: 'Connection strategy & regulatory support',
+		when: 'When preparing applications or negotiating with TSOs and DSOs.',
+		what: 'Guidance on application processes and timing — including the Reifegradverfahren — connection pathways, flexible connection options and evolving regulatory requirements.',
+		receive: 'A connection strategy and preparation support for the conversations with the grid operator.'
+	},
+	{
+		title: 'Project-specific grid studies',
+		when: 'When a development question needs tailored technical analysis.',
+		what: 'Tailored analysis of substations, connection alternatives or specific grid questions, built on our Germany-wide grid database.',
+		receive: 'A focused technical study answering the question at hand, traceable to official sources.'
+	}
+]
+---
+
+<Section id="advisory-services" mode="light">
+	<Row classes="mb-14 text-center">
+		<Col span="8" classes="lg:col-start-3">
+			<p class="mb-4 font-mono text-xs font-bold uppercase tracking-[0.2em] text-primary-500">
+				Services
+			</p>
+			<h2 class="font-headings text-3xl font-bold leading-tight lg:text-4xl">
+				What you can commission
+			</h2>
+		</Col>
+	</Row>
+	<Row classes="gap-y-6">
+		{
+			services.map((service) => (
+				<Col span="6">
+					<div class="flex h-full flex-col rounded-lg border-2 border-neutral-200 bg-surface-50 p-8">
+						<h3 class="mb-4 font-headings text-xl font-bold">{service.title}</h3>
+						<p class="mb-3 text-sm leading-relaxed text-neutral-600">
+							<span class="font-bold text-neutral-700">When you need it: </span>
+							{service.when}
+						</p>
+						<p class="mb-3 text-sm leading-relaxed text-neutral-600">
+							<span class="font-bold text-neutral-700">What we assess: </span>
+							{service.what}
+						</p>
+						<p class="mb-0 text-sm leading-relaxed text-neutral-600">
+							<span class="font-bold text-neutral-700">What you receive: </span>
+							{service.receive}
+						</p>
+					</div>
+				</Col>
+			))
+		}
+	</Row>
+</Section>

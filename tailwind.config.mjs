@@ -35,18 +35,19 @@ export default {
     extend: {
       colors: {
         transparent: "transparent",
+        // Petrol — matched to the report standards teal (#1A7F7A / #E6F4F4)
         primary: {
-          50: "#e8f2ff",
-          100: "#d6e8ff",
-          200: "#b4d3ff",
-          300: "#88b6ff",
-          400: "#598cff",
-          500: "#3363ff",
-          600: "#1036ff",
-          700: "#0729fb",
-          800: "#0926c5",
-          900: "#122b9d",
-          950: "#0b175b",
+          50: "#e6f4f4",
+          100: "#d2eaea",
+          200: "#a8d6d5",
+          300: "#79bcba",
+          400: "#459d9a",
+          500: "#1a7f7a",
+          600: "#156a66",
+          700: "#125753",
+          800: "#104744",
+          900: "#0e3b39",
+          950: "#072121",
         },
         accent: {
           50: "#fbffe6",
