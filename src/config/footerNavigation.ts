@@ -70,8 +70,12 @@ export const footerNavigationData: FooterData = {
 			category: 'Legal Terms',
 			subCategories: [
 				{
-					subCategory: 'Terms & Conditions',
+					subCategory: 'Consulting & Reports (AGB)',
 					subCategoryLink: '/terms'
+				},
+				{
+					subCategory: 'Platform Terms (Grid Workspace)',
+					subCategoryLink: '/platform-terms'
 				},
 				{
 					subCategory: 'Privacy Policy',
