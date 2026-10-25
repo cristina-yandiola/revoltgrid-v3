@@ -1,6 +1,6 @@
 ---
 import SectionWithImage from '../../../components/ui/SectionWithImage.astro'
-import panels from '../../../assets/panels.jpg'
+import panels from '../../../assets/panels-cropped.jpg'
 import Col from '../../../components/ui/Col.astro'
 import Row from '../../../components/ui/Row.astro'
 import { Icon } from 'astro-icon/components'
@@ -37,8 +37,8 @@ const capabilities = [
 			<ul class="space-y-8">
 				{
 					capabilities.map((point) => (
-						<li class="flex items-center gap-3">
-							<Icon name={point.icon} class="h-8 w-8 shrink-0 text-primary-700" />
+						<li class="flex items-center gap-6">
+							<Icon name={point.icon} class="h-8 w-8 shrink-0 text-primary-700 lg:-ml-8" />
 							<div>
 								<h3 class="text-base text-neutral-600">{point.text}</h3>
 							</div>
