@@ -4,7 +4,6 @@ import Layout from '../layouts/Layout.astro'
 import GridScoreHero from '../components/sections/gridscore/GridScoreHero.astro'
 import GridScoreMetrics from '../components/sections/gridscore/GridScoreMetrics.astro'
 import GridScoreCapabilities from '../components/sections/gridscore/GridScoreCapabilities.astro'
-import GridScoreContext from '../components/sections/gridscore/GridScoreContext.astro'
 import GridScoreSupport from '../components/sections/gridscore/GridScoreSupport.astro'
 import GridScoreFaq from '../components/sections/gridscore/GridScoreFaq.astro'
 import CTA from '../components/blocks/homepage/CTA.astro'
@@ -20,8 +19,7 @@ const SEO = {
 	<GridScoreHero />
 	<GridScoreMetrics />
 	<GridScoreCapabilities />
-	<GridScoreContext />
 	<GridScoreSupport />
 	<GridScoreFaq />
-	<CTA />
+	<CTA classes="!bg-white" />
 </Layout>
