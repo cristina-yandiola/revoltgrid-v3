@@ -70,7 +70,7 @@ export const footerNavigationData: FooterData = {
 			category: 'Legal Terms',
 			subCategories: [
 				{
-					subCategory: 'Consulting & Reports (AGB)',
+					subCategory: 'General Terms (AGB)',
 					subCategoryLink: '/terms'
 				},
 				{
