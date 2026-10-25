@@ -10,8 +10,8 @@ tags:
   - Germany
   - Grid Connection
 featured: true
-heroImage: '/images/product/mockups/laptop-map.jpg'
-heroImageAlt: 'Revolt Grid Workspace — Germany-wide grid map with 380, 220 and 110 kV layers'
+heroImage: '/images/product/mockups/person-map.jpg'
+heroImageAlt: 'Analyst using the Revolt Grid Workspace — grid map and dashboard'
 author: 'Revolt Energy'
 ---
 
@@ -30,8 +30,6 @@ Grid connection assessments often require developers to navigate multiple source
 GridScore brings relevant indicators together in a single workspace, providing a more structured approach to grid connection screening and project prioritization.
 
 Instead of evaluating substations in isolation, developers can compare opportunities across a range of grid-related factors and focus development resources where they are most likely to create value.
-
-![Analyst reviewing the Revolt Grid Workspace map of the German grid](/images/product/mockups/person-map.jpg)
 
 ## What Can You Do with GridScore?
 
