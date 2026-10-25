@@ -1,20 +1,28 @@
 ---
+import SectionWithImage from '../../../components/ui/SectionWithImage.astro'
 import Button from '../../../components/ui/Button.astro'
 import Col from '../../../components/ui/Col.astro'
 import Row from '../../../components/ui/Row.astro'
-import Section from '../../../components/ui/Section.astro'
+import pylonsImage from '../../../assets/powerlines-upscaled.png'
 ---
 
-<Section id="strategy-hero" mode="light" surfaceColor>
+<SectionWithImage
+	id="strategy-hero"
+	image={pylonsImage}
+	imageAlt="Symmetrical view of high voltage power lines and transmission towers extending into the horizon"
+	mode="light"
+	surfaceColor
+	imageClasses="grayscale-[0.2] contrast-[1.05]"
+>
 	<Row classes="items-center">
-		<Col span="7" classes="relative z-10">
+		<Col span="12" classes="relative z-10">
 			<p class="mb-4 font-mono text-xs font-bold uppercase tracking-[0.2em] text-primary-500">
 				Specialist Grid Advisory
 			</p>
 			<h1 class="mb-6 font-headings text-3xl font-bold leading-tight lg:text-4xl">Grid Advisory</h1>
 			<p class="mb-10 max-w-xl text-lg leading-relaxed text-neutral-600 dark:text-neutral-400">
 				Project-specific grid intelligence and strategic advisory for developers and investors
-				navigating Germany’s evolving grid landscape.
+				navigating Germany's evolving grid landscape.
 			</p>
 			<div class="flex flex-wrap gap-4">
 				<Button size="lg" style="accent-light" link="/contact">Book a Call</Button>
@@ -24,4 +32,4 @@ import Section from '../../../components/ui/Section.astro'
 			</div>
 		</Col>
 	</Row>
-</Section>
+</SectionWithImage>

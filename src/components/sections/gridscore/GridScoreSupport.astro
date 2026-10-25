@@ -1,8 +1,9 @@
 ---
-import SectionWithImage from '../../ui/SectionWithImage.astro'
-import Col from '../../../components/ui/Col.astro'
-import Row from '../../../components/ui/Row.astro'
-import energySafeWork from '../../../assets/panels-2.jpg'
+// Beyond the score — advisory cross-sell, styled like the rest of the v3 page
+import Section from '../../ui/Section.astro'
+import Col from '../../ui/Col.astro'
+import Row from '../../ui/Row.astro'
+import { Icon } from 'astro-icon/components'
 
 const supportItems = [
 	{
@@ -20,35 +21,43 @@ const supportItems = [
 ]
 ---
 
-<SectionWithImage
-	id="gridscore-hero"
-	image={energySafeWork}
-	imageAlt="A futuristic power line tower silhouetted against a sharp sunset sky, geometric patterns of steel wires and glass insulators"
-	mode="light"
->
-	<Row>
-		<Col span="10" classes="relative z-10">
+<Section id="gridscore-support" mode="light">
+	<Row classes="mb-12 text-center">
+		<Col span="8" classes="lg:col-start-3">
 			<p class="mb-4 font-mono text-xs font-bold uppercase tracking-[0.2em] text-primary-500">
 				Beyond the Score
 			</p>
-			<h2 class="mb-8 font-headings text-3xl font-bold leading-tight lg:text-4xl">
+			<h2 class="mb-6 font-headings text-3xl font-bold leading-tight lg:text-4xl">
 				When a project needs more than a score
 			</h2>
-			<p class="mb-8 leading-relaxed text-neutral-600">
+			<p class="mx-auto max-w-2xl text-lg leading-relaxed text-neutral-600">
 				GridScore supports screening and prioritization. For investment decisions, project-specific
 				assessments or complex connection questions, Revolt provides independent analysis and
-				specialist <a href="/grid-strategy" class="font-semibold">grid advisory</a>.
+				specialist grid advisory.
 			</p>
-			<div class="space-y-12">
-				{
-					supportItems.map((item) => (
-						<div class="rounded-lg bg-primary-50 p-6">
-							<h3 class="mb-2 font-bold">{item.title}</h3>
-							<p class="text-neutral-600 dark:text-neutral-400">{item.text}</p>
-						</div>
-					))
-				}
-			</div>
 		</Col>
 	</Row>
-</SectionWithImage>
+	<Row classes="gap-y-6">
+		{
+			supportItems.map((item) => (
+				<Col span="4">
+					<div class="h-full rounded-lg bg-primary-50 p-8">
+						<h3 class="mb-3 font-headings text-xl font-bold text-neutral-800">{item.title}</h3>
+						<p class="mb-0 leading-relaxed text-neutral-600">{item.text}</p>
+					</div>
+				</Col>
+			))
+		}
+	</Row>
+	<Row classes="mt-10">
+		<Col span="12" classes="text-center">
+			<a
+				href="/grid-strategy"
+				class="inline-flex items-center font-bold uppercase tracking-wide text-neutral-800 transition-colors duration-200 hover:text-primary-700"
+			>
+				Explore Grid Advisory
+				<Icon name="arrow-right" class="ml-2" />
+			</a>
+		</Col>
+	</Row>
+</Section>
