@@ -1,0 +1,78 @@
+---
+// LaptopFrame — presents an app screenshot inside a clean laptop mockup.
+// Never show raw product screenshots on the site; always mount them in this frame.
+type Props = {
+	src: string
+	alt: string
+	caption?: string
+	classes?: string
+}
+const { src, alt, caption, classes } = Astro.props
+---
+
+<figure class:list={['laptop-frame', classes]}>
+	<div class="laptop-frame__lid">
+		<div class="laptop-frame__camera"></div>
+		<img src={src} alt={alt} loading="lazy" class="laptop-frame__screen" />
+	</div>
+	<div class="laptop-frame__base">
+		<div class="laptop-frame__notch"></div>
+	</div>
+	{caption && <figcaption class="laptop-frame__caption">{caption}</figcaption>}
+</figure>
+
+<style>
+	.laptop-frame {
+		margin: 0;
+		width: 100%;
+		filter: drop-shadow(0 24px 28px rgba(28, 32, 34, 0.18));
+	}
+	.laptop-frame__lid {
+		position: relative;
+		margin: 0 auto;
+		width: 86%;
+		background: #14181a;
+		border-radius: 14px 14px 0 0;
+		padding: 16px 10px 10px;
+	}
+	.laptop-frame__camera {
+		position: absolute;
+		top: 6px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 5px;
+		height: 5px;
+		border-radius: 50%;
+		background: #3a4144;
+	}
+	.laptop-frame__screen {
+		display: block;
+		width: 100%;
+		border-radius: 4px;
+		background: #fff;
+	}
+	.laptop-frame__base {
+		position: relative;
+		margin: 0 auto;
+		width: 100%;
+		height: 15px;
+		background: linear-gradient(180deg, #e3e5e6 0%, #c9cccd 55%, #9ea3a5 100%);
+		border-radius: 3px 3px 12px 12px;
+	}
+	.laptop-frame__notch {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 13%;
+		height: 6px;
+		background: #b4b8ba;
+		border-radius: 0 0 8px 8px;
+	}
+	.laptop-frame__caption {
+		margin-top: 18px;
+		text-align: center;
+		font-size: 0.75rem;
+		color: #6b7679;
+	}
+</style>

@@ -6,6 +6,7 @@ import Eyebrow from '../../ui/Eyebrow.astro'
 import Card from '../../ui/cards/partials/Card.astro'
 import { Image } from 'astro:assets'
 import pylonsImage from '../../../assets/aerial-powerlines.jpg'
+import LaptopFrame from '../../ui/LaptopFrame.astro'
 import { Icon } from 'astro-icon/components'
 
 type Offering = {
@@ -45,12 +46,13 @@ const advisory: Offering = {
 	<div class="mx-auto grid max-w-6xl grid-cols-1 gap-8 lg:grid-cols-2">
 		<Card classes="h-full overflow-hidden">
 			<div class="flex h-full flex-col">
-				<img
-					src="/images/product/grid-map.jpg"
-					alt="Revolt Grid Workspace — Germany-wide grid map with 380, 220 and 110 kV layers"
-					class="h-56 w-full object-cover object-left-top"
-					loading="lazy"
-				/>
+				<div class="flex h-56 items-end justify-center overflow-hidden bg-primary-50 px-10 pt-8">
+					<LaptopFrame
+						src="/images/product/grid-map.jpg"
+						alt="Revolt Grid Workspace — Germany-wide grid map with 380, 220 and 110 kV layers"
+						classes="translate-y-2"
+					/>
+				</div>
 				<div class="flex flex-1 flex-col p-8">
 					<Eyebrow title={software.tag} />
 					<h3 class="mb-4 font-headings text-[24px] font-bold leading-snug text-neutral-800">

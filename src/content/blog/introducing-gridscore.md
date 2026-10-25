@@ -53,8 +53,6 @@ Compare substations using GridScore's structured scoring framework to support ea
 
 Monitor relevant grid developments and application windows to help inform project planning and connection strategies.
 
-![Revolt Grid Workspace — portfolio dashboard with pipeline stages and top substations (demo data)](/images/product/workspace-dashboard.jpg)
-
 ## From 380 kV to 110 kV: Expanding Coverage
 
 GridScore is launching with intelligence covering Germany's 380 kV transmission network, with ongoing expansion into the 110 kV distribution grid.

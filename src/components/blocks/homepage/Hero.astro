@@ -1,5 +1,5 @@
 ---
-// Hero Section — company-led: Revolt = grid intelligence + advisory
+// Hero Section — v2 hero restored: Revolt is broader than the workspace
 // ------------
 import SectionWithImage from '../../ui/SectionWithImage.astro'
 import Button from '../../ui/Button.astro'
@@ -18,35 +18,28 @@ import { Icon } from 'astro-icon/components'
 	imageClasses="grayscale-[0.2] contrast-[1.1]"
 >
 	<div class="relative z-10 flex flex-col justify-center">
-		<Eyebrow title="Revolt Energy · Grid Intelligence" />
+		<Eyebrow title="Grid Intelligence" />
 		<h1 class="mb-8 font-headings text-3xl font-bold leading-tight lg:text-4xl">
-			Find better grid connection opportunities. <span class="marker-highlight">Faster.</span>
+			Decision-grade grid intelligence for energy infrastructure.
 		</h1>
 		<p class="mb-3 max-w-xl text-lg leading-relaxed text-neutral-600">
-			Revolt combines grid intelligence software and specialist advisory to help BESS developers
-			and investors in Germany screen connection opportunities, assess grid risk, and navigate the
-			connection process.
+			Revolt helps developers and investors prioritize connection opportunities, assess grid-related
+			investment risk, and make faster decisions across BESS, renewables, and data centres.
 		</p>
 		<p class="mb-10 max-w-xl text-lg leading-relaxed text-neutral-600">
-			Behind both sits a proprietary, Germany-wide grid database — built from official sources,
-			traceable to every figure.
+			Using GridScore™, Revolt quantifies congestion exposure, grid fee risk, and potential revenue
+			loss to help assess project bankability before capital is deployed.
 		</p>
-		<div class="flex flex-wrap items-center gap-6">
-			<Button size="lg" link="/book" style="accent-light">Book a demo</Button>
-			<Button variation="link" style="neutral" size="lg" link="/gridscore">
+		<div class="flex flex-wrap gap-4">
+			<Button size="lg" link="/gridscore" style="accent-light"> View GridScore</Button>
+			<Button variation="link" style="neutral" size="lg" link="/book">
 				<span
 					class="flex items-center border-b-2 border-neutral-500 px-0.5 pb-1 font-bold uppercase transition-colors duration-200 hover:text-primary-700"
 				>
-					Explore GridScore
+					Book a Call
 					<Icon name="arrow-right" class="ml-2" />
 				</span>
 			</Button>
 		</div>
-		<p class="mt-8 text-sm text-neutral-500">
-			Looking at a specific project? <a
-				href="/grid-strategy"
-				class="font-semibold text-primary-600 hover:text-primary-700">Explore Grid Advisory →</a
-			>
-		</p>
 	</div>
 </SectionWithImage>
