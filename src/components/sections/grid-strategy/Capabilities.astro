@@ -1,38 +1,38 @@
 ---
 import SectionWithImage from '../../../components/ui/SectionWithImage.astro'
-import powerlines from '../../../assets/aerial-powerlines.jpg'
+import panels from '../../../assets/panels.jpg'
 import Col from '../../../components/ui/Col.astro'
 import Row from '../../../components/ui/Row.astro'
 import { Icon } from 'astro-icon/components'
 
 const capabilities = [
 	{
-		text: 'Project-specific assessment of grid connection risk, network constraints, and regional capacity.',
+		text: 'Grid risk assessment: project-specific analysis of connection risk, network constraints, congestion and curtailment exposure.',
 		icon: 'shield-check'
 	},
 	{
-		text: 'Strategic guidance on grid applications, connection pathways, and evolving TSO/DSO frameworks.',
+		text: 'Revenue impact of grid conditions: curtailment and dispatch-constraint effects quantified under base and downside scenarios.',
+		icon: 'file-chart-column-increasing'
+	},
+	{
+		text: 'Due diligence on grid connections: independent review of connection status, conditions and technical assumptions for acquisitions and investment decisions.',
 		icon: 'scale'
 	},
 	{
-		text: 'Site and pipeline prioritisation informed by project-specific grid intelligence.',
+		text: 'Strategic guidance on grid applications, connection pathways, and evolving TSO/DSO frameworks.',
 		icon: 'arrow-trending-up'
-	},
-	{
-		text: 'Grid development risk assessment and improvement of grid-related project performance.',
-		icon: 'file-chart-column-increasing'
 	}
 ]
 ---
 
-<SectionWithImage id="strategy-scope" mode="light" image={powerlines} reverse>
+<SectionWithImage id="strategy-scope" mode="light" image={panels} reverse>
 	<Row>
-		<Col span="12" classes="relative z-10 flex flex-col justify-center lg:pl-12 py-16 lg:py-28">
+		<Col span="12" classes="relative z-10 flex flex-col justify-center lg:pl-12 py-10 lg:py-14">
 			<p class="mb-4 font-mono text-xs font-bold uppercase tracking-[0.2em] text-primary-500">
 				Capabilities
 			</p>
 			<h2 class="mb-6 max-w-xl font-headings text-3xl font-bold leading-tight lg:text-4xl">
-				Scope
+				Scope of services
 			</h2>
 			<ul class="space-y-8">
 				{
