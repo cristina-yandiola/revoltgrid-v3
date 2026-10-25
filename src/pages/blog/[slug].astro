@@ -5,7 +5,6 @@ import Layout from '../../layouts/Layout.astro'
 import Section from '../../components/ui/Section.astro'
 import Eyebrow from '../../components/ui/Eyebrow.astro'
 import CTA from '../../components/blocks/homepage/CTA.astro'
-import LaptopFrame from '../../components/ui/LaptopFrame.astro'
 import { getCollection, render } from 'astro:content'
 
 export async function getStaticPaths() {
@@ -47,24 +46,77 @@ const articleSchema = {
 			<header class="mb-10">
 				<Eyebrow title={`${post.data.category} · ${formatDate(post.data.pubDate)}`} />
 				<h1
-					class="mb-6 font-headings text-3xl font-bold leading-tight text-neutral-800 lg:text-4xl"
+					class="mb-0 font-headings text-3xl font-bold leading-tight text-neutral-800 lg:text-4xl"
 				>
 					{post.data.title}
 				</h1>
-				{
-					post.data.heroImage && (
-						<LaptopFrame
-							src={post.data.heroImage}
-							alt={post.data.heroImageAlt ?? post.data.title}
-							classes="mt-10"
-						/>
-					)
-				}
 			</header>
-			<div class="basic-text basic-text--lg">
+			<div class="basic-text basic-text--lg article-body">
 				<Content />
 			</div>
 		</article>
 	</Section>
 	<CTA />
 </Layout>
+
+<style is:global>
+	/* Article typography — headings scaled for reading, not landing pages */
+	.article-body h2 {
+		font-size: 1.375rem;
+		line-height: 1.35;
+		margin-top: 3rem !important;
+		margin-bottom: 1rem;
+	}
+	.article-body h3 {
+		font-size: 1.125rem;
+		line-height: 1.4;
+		margin-top: 2rem !important;
+		margin-bottom: 0.75rem;
+	}
+	@media (min-width: 1024px) {
+		.article-body h2 {
+			font-size: 1.5rem;
+		}
+		.article-body h3 {
+			font-size: 1.25rem;
+		}
+	}
+
+	/* Screenshots inside articles render as laptop mockups (never raw) */
+	.article-body p:has(> img) {
+		width: 86%;
+		margin: 2.75rem auto 3.25rem;
+		background: #14181a;
+		border-radius: 14px 14px 0 0;
+		padding: 16px 10px 10px;
+		position: relative;
+		filter: drop-shadow(0 20px 24px rgba(28, 32, 34, 0.18));
+	}
+	.article-body p:has(> img)::before {
+		content: '';
+		position: absolute;
+		top: 6px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 5px;
+		height: 5px;
+		border-radius: 50%;
+		background: #3a4144;
+	}
+	.article-body p:has(> img)::after {
+		content: '';
+		position: absolute;
+		top: 100%;
+		left: -8.1%;
+		width: 116.2%;
+		height: 15px;
+		background: linear-gradient(180deg, #e3e5e6 0%, #c9cccd 55%, #9ea3a5 100%);
+		border-radius: 3px 3px 12px 12px;
+	}
+	.article-body p:has(> img) img {
+		border-radius: 4px !important;
+		border: none !important;
+		margin: 0 !important;
+		width: 100%;
+	}
+</style>

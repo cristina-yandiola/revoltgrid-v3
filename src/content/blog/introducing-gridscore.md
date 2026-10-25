@@ -31,6 +31,8 @@ GridScore brings relevant indicators together in a single workspace, providing a
 
 Instead of evaluating substations in isolation, developers can compare opportunities across a range of grid-related factors and focus development resources where they are most likely to create value.
 
+![Revolt Grid Workspace — Germany-wide grid map with 380, 220 and 110 kV layers and curtailment overlay](/images/product/grid-map.jpg)
+
 ## What Can You Do with GridScore?
 
 **Identify and compare connection opportunities**
@@ -52,6 +54,8 @@ Compare substations using GridScore's structured scoring framework to support ea
 **Stay informed about grid connection developments**
 
 Monitor relevant grid developments and application windows to help inform project planning and connection strategies.
+
+![Revolt Grid Workspace — portfolio dashboard with pipeline stages and top substations (demo data)](/images/product/workspace-dashboard.jpg)
 
 ## From 380 kV to 110 kV: Expanding Coverage
 
