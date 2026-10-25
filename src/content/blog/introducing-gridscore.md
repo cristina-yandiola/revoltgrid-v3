@@ -10,7 +10,7 @@ tags:
   - Germany
   - Grid Connection
 featured: true
-heroImage: '/images/product/mockups/person-map.jpg'
+heroImage: '/images/product/mockups/person-workspace.jpg'
 heroImageAlt: 'Analyst using the Revolt Grid Workspace — grid map and dashboard'
 author: 'Revolt Energy'
 ---
@@ -53,7 +53,7 @@ Compare substations using GridScore's structured scoring framework to support ea
 
 Monitor relevant grid developments and application windows to help inform project planning and connection strategies.
 
-![Laptop running the Revolt Grid Workspace portfolio dashboard (demo data)](/images/product/mockups/laptop-dashboard.jpg)
+![Laptop running the Revolt Grid Workspace portfolio dashboard (demo data)](/images/product/mockups/laptop-dash-v2.jpg)
 
 ## From 380 kV to 110 kV: Expanding Coverage
 

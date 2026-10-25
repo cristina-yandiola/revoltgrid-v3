@@ -28,7 +28,7 @@ const faqs = [
 ]
 ---
 
-<Section id="gridscore-faq" mode="light" surfaceColor>
+<Section id="gridscore-faq" mode="light" classes="!bg-white !pt-4 lg:!pt-8">
 	<Row>
 		<Col span="8" classes="lg:col-start-3">
 			<p class="mb-4 text-center font-mono text-xs font-bold uppercase tracking-[0.2em] text-primary-500">
@@ -40,7 +40,7 @@ const faqs = [
 			<div class="space-y-4">
 				{
 					faqs.map((faq) => (
-						<details class="group rounded-lg bg-white p-6">
+						<details class="group rounded-lg bg-surface-50 p-6">
 							<summary class="cursor-pointer list-none font-bold text-neutral-700 marker:hidden [&::-webkit-details-marker]:hidden">
 								<span class="flex items-center justify-between gap-4">
 									{faq.q}

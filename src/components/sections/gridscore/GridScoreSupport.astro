@@ -1,5 +1,5 @@
 ---
-// Beyond the score — advisory cross-sell, styled like the rest of the v3 page
+// Beyond the score — advisory cross-sell, numbered-card format
 import Section from '../../ui/Section.astro'
 import Col from '../../ui/Col.astro'
 import Row from '../../ui/Row.astro'
@@ -7,21 +7,24 @@ import { Icon } from 'astro-icon/components'
 
 const supportItems = [
 	{
+		number: '1',
 		title: 'Grid risk assessment',
 		text: 'Independent, project-specific analysis of congestion, curtailment and network constraints affecting a site.'
 	},
 	{
+		number: '2',
 		title: 'Connection strategy & process support',
 		text: 'Guidance through TSO and DSO application processes, Reifegradverfahren and connection negotiations.'
 	},
 	{
+		number: '3',
 		title: 'Acquisition & pipeline screening',
 		text: 'Early-stage support for project selection, portfolio prioritization, and grid-related development risk.'
 	}
 ]
 ---
 
-<Section id="gridscore-support" mode="light">
+<Section id="gridscore-support" mode="light" surfaceColor>
 	<Row classes="mb-12 text-center">
 		<Col span="8" classes="lg:col-start-3">
 			<p class="mb-4 font-mono text-xs font-bold uppercase tracking-[0.2em] text-primary-500">
@@ -41,9 +44,12 @@ const supportItems = [
 		{
 			supportItems.map((item) => (
 				<Col span="4">
-					<div class="h-full rounded-lg bg-primary-50 p-8">
-						<h3 class="mb-3 font-headings text-xl font-bold text-neutral-800">{item.title}</h3>
-						<p class="mb-0 leading-relaxed text-neutral-600">{item.text}</p>
+					<div class="h-full rounded-lg border-2 border-neutral-200 bg-white p-8">
+						<div class="mb-6 flex h-10 w-10 items-center justify-center rounded bg-primary-500 font-mono text-sm font-bold text-white">
+							{item.number}
+						</div>
+						<h3 class="mb-4 font-headings text-xl font-bold">{item.title}</h3>
+						<p class="leading-relaxed text-neutral-600 dark:text-neutral-400">{item.text}</p>
 					</div>
 				</Col>
 			))
