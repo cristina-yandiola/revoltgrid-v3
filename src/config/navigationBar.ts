@@ -41,14 +41,7 @@ export const navigationBarData: NavData = {
 		{ name: 'Home', link: '/' },
 		{ name: 'GridScore', link: '/gridscore' },
 		{ name: 'Advisory', link: '/grid-strategy' },
-		{
-			name: 'About us',
-			link: '/about-us',
-			submenu: [
-				{ name: 'Team', link: '/about-us#team' },
-				{ name: 'Blog', link: '/blog' }
-			]
-		},
+		{ name: 'About us', link: '/about-us' },
 		{ name: 'Contact', link: '/contact' }
 	],
 	navActions: [{ name: 'Book a demo', link: '/contact', style: 'accent-light', size: 'base' }]
