@@ -65,7 +65,7 @@ By bringing these indicators together into comparative substation rankings, Grid
 
 Instead of analysing each connection point independently, developers can use GridScore to focus their development resources on the most promising opportunities.
 
-![Laptop running the Revolt Grid Workspace project pipeline](/images/product/mockups/laptop-pipeline-v2.jpg)
+![Laptop running the Revolt Grid Workspace portfolio dashboard](/images/product/mockups/laptop-dash-v2.jpg)
 
 ## Expanding GridScore from 380 kV to 110 kV
 
