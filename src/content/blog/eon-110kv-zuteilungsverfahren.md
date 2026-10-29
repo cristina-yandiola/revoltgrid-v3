@@ -93,7 +93,7 @@ In an increasingly competitive allocation environment, understanding these diffe
 
 Revolt's Grid Workspace brings together infrastructure mapping, **GridScore substation rankings**, grid risk indicators and project pipeline management in a single platform.
 
-![Revolt Grid Workspace — 110 kV grid map with substation detail panel and curtailment heatmap](/images/product/gridmap-110kv.jpg)
+![Analyst reviewing the Revolt Grid Workspace — 110 kV grid map with substation detail panel](/images/product/mockups/analyst-gridmap-110kv.jpg)
 
 Whether you're screening new locations, preparing for E.ON's Zuteilungsverfahren or evaluating an existing BESS development portfolio, GridScore helps you make more informed decisions about where to develop.
 
