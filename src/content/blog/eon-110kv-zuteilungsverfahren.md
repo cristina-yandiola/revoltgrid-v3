@@ -11,8 +11,8 @@ tags:
   - Zuteilungsverfahren
   - Grid Connection
 featured: true
-heroImage: '/images/product/mockups/laptop-gridmap-110kv.jpg'
-heroImageAlt: 'Laptop running the Revolt Grid Workspace — 110 kV grid map with substation detail panel'
+heroImage: '/images/product/mockups/laptop-pipeline-v2.jpg'
+heroImageAlt: 'Laptop running the Revolt Grid Workspace project pipeline'
 author: 'Revolt Energy'
 ---
 
@@ -65,7 +65,7 @@ By bringing these indicators together into comparative substation rankings, Grid
 
 Instead of analysing each connection point independently, developers can use GridScore to focus their development resources on the most promising opportunities.
 
-![Laptop running the Revolt Grid Workspace — 110 kV grid map with substation detail panel](/images/product/mockups/laptop-gridmap-110kv.jpg)
+![Laptop running the Revolt Grid Workspace project pipeline](/images/product/mockups/laptop-pipeline-v2.jpg)
 
 ## Expanding GridScore from 380 kV to 110 kV
 
@@ -93,7 +93,7 @@ In an increasingly competitive allocation environment, understanding these diffe
 
 Revolt's Grid Workspace brings together infrastructure mapping, **GridScore substation rankings**, grid risk indicators and project pipeline management in a single platform.
 
-![Laptop running the Revolt Grid Workspace project pipeline](/images/product/mockups/laptop-pipeline-v2.jpg)
+![Revolt Grid Workspace — 110 kV grid map with substation detail panel and curtailment heatmap](/images/product/gridmap-110kv.jpg)
 
 Whether you're screening new locations, preparing for E.ON's Zuteilungsverfahren or evaluating an existing BESS development portfolio, GridScore helps you make more informed decisions about where to develop.
 
